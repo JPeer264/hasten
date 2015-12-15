@@ -1,0 +1,21 @@
+{
+    "framework": "angular",
+    "scaffold": {
+        "src": {
+            "app": {
+                "base": "app",
+                "subfolder": [
+                    "components",
+                    "pages",
+                    "services"
+                ]
+            }
+        }
+    },
+    "names": {
+        "app": false
+    },
+    "vendorKeywords": [
+        "angular"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+	"src": {
+        "base": "src",
+        "assets": {
+            "base": "assets",
+            "json": "json",
+            "img": "img",
+            "scss": "scss",
+            "js": "js"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "hasten",
+  "version": "0.0.0",
+  "description": "A npm package",
+  "scripts": {
+    "test": "npm test",
+    "doc": "./node_modules/.bin/jsdoc lib/routes -r lib/util -r lib/cli.js lib/router.js -t ./node_modules/ink-docstrap/template -c conf.json -d docs"
+  },
+  "bin": {
+    "hasten": "./bin/hasten"
+  },
+  "author": "Jan Peer Stöcklmair <janpeer264@gmail.com>",
+  "dependencies": {
+    "async": "^1.4.2",
+    "chalk": "^1.1.1",
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "dive": "^0.4.0",
+    "extend": "^3.0.0",
+    "fs-extra": "^0.24.0",
+    "glob": "^5.0.15",
+    "inquirer": "^0.8.0",
+    "jsdoc": "^3.3.0",
+    "json-extra": "0.0.1",
+    "jsonlint": "^1.6.2",
+    "lodash": "^3.10.1",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "npm-keyword": "^4.2.0",
+    "prompt": "^0.2.14",
+    "underscore": "^1.8.3",
+    "util": "^0.10.3"
+  },
+  "keywords": [
+    "hasten",
+    "continuous integration",
+    "ci",
+    "Jenkins",
+    "custom-ci",
+    "generate",
+    "generator",
+    "app-cli",
+    "cli",
+    "build",
+    "grunt",
+    "gulp",
+    "node"
+  ],
+  "main": "index.js",
+  "devDependencies": {
+    "ink-docstrap": "^0.5.2",
+    "jsdoc": "^3.3.0"
+  }
+}

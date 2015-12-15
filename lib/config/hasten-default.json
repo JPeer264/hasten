@@ -1,0 +1,25 @@
+{
+    "framework": "",
+    "taskrunner": "Gruntfile.js",
+    "scaffold": {
+        "src": {
+            "base": "src",
+            "assets": {
+                "base": "assets",
+                "json": "json",
+                "img": "img",
+                "scss": "scss",
+                "js": "js"
+            }
+        }
+    },
+    "names": {
+        "src": "src",
+        "dest": "dist",
+        "assets": true
+    },
+    "ask": [{
+        "message": "Want to install npm?",
+        "command": "npm install"
+    }]
+}

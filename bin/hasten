@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+'use strict';
+
+var path = require('path'),
+	fs = require('fs'),
+	lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib'),
+	cli = require(lib + '/cli'),
+	program = require('commander');
+
+if (process.argv[2] === undefined) {
+	cli.init();
+} else {
+	// TODO maybe rename function - changes hasten.json
+	//  * hasten rename
+	program
+		.version('0.0.1')
+		.usage('[command]')
+		.option('-s, --standard', 'Express installation with standardvalues')
+		.command('check <filename>', 'Check standard plugins like jQuery or Bootstrap in src dir (filename is optional)')
+		.command('reorder', 'Reorder plugins in ./vendor folder')
+		.command('list', 'List all installed frameworks')
+		.command('install', 'Install or Remove frameworks')
+		.parse(process.argv);
+
+	if (program.standard) {
+		cli.standard();
+	}
+}

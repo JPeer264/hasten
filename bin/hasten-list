@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+'use strict';
+
+var path = require('path');
+var fs = require('fs');
+var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+var hasten = require(lib + '/util/hasten');
+var program = require('commander');
+
+hasten.install.showInstalled();
